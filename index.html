@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="app" id="app">
+        
+<div class="scene menu">
+    <div class="menu-inner">
+        <h1 class="menu-title">Colors</h1>
+        <p class="menu-subtitle">
+            Click a block.
+        </p>
+
+        <div class="portal-grid">
+            <button class="portal"
+                    style="--page-color: #d95f02;"
+                    data-page-link
+                    data-id="orange"
+                    data-href="/page/orange"
+                    data-color="#d95f02">
+                <h2>Orange</h2>
+                <p>More text here</p>
+                <div class="portal-number">01</div>
+            </button>
+
+            <button class="portal"
+                    style="--page-color: #2563eb;"
+                    data-page-link
+                    data-id="blue"
+                    data-href="/page/blue"
+                    data-color="#2563eb">
+                <h2>Blue</h2>
+                <p>More text here</p>
+                <div class="portal-number">02</div>
+            </button>
+
+            <button class="portal"
+                    style="--page-color: #7c3aed;"
+                    data-page-link
+                    data-id="purple"
+                    data-href="/page/purple"
+                    data-color="#7c3aed">
+                <h2>Purple</h2>
+                <p>More text here</p>
+                <div class="portal-number">03</div>
+            </button>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <div class="transition-cover" id="cover"></div>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
