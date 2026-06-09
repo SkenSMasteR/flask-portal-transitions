@@ -1,5 +1,6 @@
 const app = document.getElementById("app");
 const cover = document.getElementById("cover");
+const basePath = document.querySelector("base")?.getAttribute("href") || "/";
 
 const pageColors = {
     orange: "#d95f02",
@@ -64,7 +65,7 @@ function goBackToMenu(targetButtonId) {
     });
 
     setTimeout(() => {
-        window.location.href = "?from=" + encodeURIComponent(targetButtonId);
+        window.location.href = basePath + "?from=" + encodeURIComponent(targetButtonId);
     }, 720);
 }
 
