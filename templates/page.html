@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="scene page" style="--page-color: {{ color }};">
+    <div class="page-card">
+        <button class="back-btn" data-back="{{ button_id }}">
+            ← Back
+        </button>
+
+        <h1 class="page-title">{{ title }}</h1>
+        <p class="page-text">{{ text }}</p>
+
+        <div class="content-blocks">
+            <div class="content-block"></div>
+            <div class="content-block"></div>
+            <div class="content-block"></div>
+            <div class="content-block"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
