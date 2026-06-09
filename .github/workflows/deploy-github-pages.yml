@@ -24,6 +24,8 @@ jobs:
           pip install Flask
 
       - name: Generate static site
+        env:
+          STATIC_PREFIX: "/${{ github.event.repository.name }}/"
         run: |
           python - <<'PY'
           import os

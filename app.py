@@ -1,6 +1,11 @@
+import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
+
+@app.context_processor
+def static_prefix():
+    return {"static_prefix": os.environ.get("STATIC_PREFIX", "/")}
 
 @app.route("/")
 def menu():
