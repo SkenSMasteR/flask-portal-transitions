@@ -64,7 +64,7 @@ function goBackToMenu(targetButtonId) {
     });
 
     setTimeout(() => {
-        window.location.href = "/?from=" + encodeURIComponent(targetButtonId);
+        window.location.href = "?from=" + encodeURIComponent(targetButtonId);
     }, 720);
 }
 
